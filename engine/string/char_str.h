@@ -42,6 +42,12 @@ public:
     *pStr = "*.zip";
   }
 
+  void str_compress( const char* pStr, int pBits ) {
+    str_ptr.GetAt( pStr );
+    str_set_array( *pStr, pBits );
+  }
+
+
 };
 
 #endif
