@@ -13,7 +13,7 @@ public:
 
 virtual void * CreateModel( Model& pModel ) = 0;
 virtual void * DestroyModel( Model& pModel ) = 0;
-virtual void * SetModelAlias( const char* pAlias ) = 0;
+virtual void SetModelAlias( const char* pAlias ) = 0;
 
 virtual bool SelectModel( Model& pModel ) = 0;
 
@@ -23,6 +23,10 @@ Model& get() {
 
 const char* getAlias() const {
   return alias;
+}
+
+Vector3 getPosition() {
+  return position;
 }
 
 protected:
