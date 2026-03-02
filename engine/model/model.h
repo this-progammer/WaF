@@ -29,6 +29,10 @@ Vector3 getPosition() {
   return position;
 }
 
+int getVertices() const {
+  return verticies;
+}
+
 protected:
 const char* alias;
 Vector3 position;
