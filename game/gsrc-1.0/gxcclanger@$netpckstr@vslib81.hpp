@@ -1,5 +1,7 @@
 #include "vlibafx.h"
 
+// dead *dont use*
+
 #ifndef GSRC_GSTD_LIB_HPP
 #define GSRC_GSTD_LIB_HPP
 
