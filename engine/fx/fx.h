@@ -3,6 +3,8 @@
 #ifndef FX_H
 #define FX_H
 
+constexpr const char* const FX_CLASS("FX");
+
 namespace _component {
 class FX : public Component {
 public:
