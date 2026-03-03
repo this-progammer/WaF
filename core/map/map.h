@@ -32,6 +32,10 @@ virtual void* DestroyMap( CMap& pMap ) = 0;
 
 const virtual void HookGLWindow( HWND gl_rect ) = 0;
 
+CMap& get() {
+  return *this;
+}
+
 protected:
 const Vector3 min_coord;
 const Vector3 max_coord;
