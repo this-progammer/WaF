@@ -13,4 +13,6 @@ public:
 
 };
 
+Component g_ComponentPtr;
+
 #endif
