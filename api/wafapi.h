@@ -29,4 +29,13 @@
 #define WAF_IMAGE_BOX 0x13
 #define WAF_SCROLLBAR 0x14
 
+class WaFAPI {
+public:
+  WaFAPI();
+  ~WaFAPI() = default;
+
+virtual void* WaFAPICreateWindow( HWND window, HCURSOR cursor, HDC devicecontext, PFD pfd, int nBits, LPSTR* caption, LPSTR* classname ) = 0;
+virtual void* WaFAPIDestroyWindow( HWND window ) = 0;
+};
+
 #endif
