@@ -3,6 +3,8 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
+constexpr const char* const TEXTURE_CLASS("Texture");
+
 #define SELECT_TEXTURE ( texture )( g_ComponentPtr.GetAt( texture ) )
 
 class Texture : public Component {
