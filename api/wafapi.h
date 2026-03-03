@@ -29,6 +29,8 @@
 #define WAF_IMAGE_BOX 0x13
 #define WAF_SCROLLBAR 0x14
 
+#define WAFAPI_CODE 0x00922847392727
+
 class WaFAPI {
 public:
   WaFAPI();
