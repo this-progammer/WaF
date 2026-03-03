@@ -3,6 +3,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#define SELECT_PLAYER ( i )( g_ComponentPtr.GetAt( i ) )
+
 namespace _component {
 
 class Player : public Component {
