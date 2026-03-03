@@ -3,6 +3,8 @@
 #ifndef NPC_H
 #define NPC_H
 
+#define SELECT_NPC ( node )( g_ComponentPtr.GetAt( node ) )
+
 namespace _component {
 
 class Npc : public Component {
@@ -13,6 +15,8 @@ public:
 virtual void* CreateNpcNode( Npc& pNpc, Vector3& position ) = 0;
 virtual void* DestroyNpcNode( Npc& pNpc ) = 0;
 virtual void* MiscNpcPtr( Npc*& pNpc ) = 0;
+
+virtual void SelectNpcNode( Npc& pNpc ) = 0;
 
 Npc& get() {
   return *this;
