@@ -5,6 +5,8 @@
 
 #define SELECT_PLAYER ( i )( g_ComponentPtr.GetAt( i ) )
 
+constexpr const char* const PLAYER_CLASS("Player");
+
 namespace _component {
 
 class Player : public Component {
