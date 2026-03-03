@@ -3,11 +3,14 @@
 #ifndef MESH_H
 #define MESH_H
 
+#define SELECT_MESH ( mesh )( g_ComponentPtr.GetAt( mesh ) )
+
+
 typedef float MeshVec;
 typedef MeshVec MeshVec3[3];
 typedef MeshVec MeshVec4[4];
 
-namespace component 
+namespace _component 
 {
 class Mesh : public Component {
   public:
