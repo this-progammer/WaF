@@ -3,6 +3,9 @@
 #ifndef CHAR_STR_
 #define CHAR_STR_
 
+#define SELECT_STRING ( str )( g_ComponentPtr.GetStr( str ) )
+#define SELECT_AT_STRING ( str )( g_ComponentPtr.GetAt( str ) )
+
 class CharStr : public Component {
 public:
   CharStr();
