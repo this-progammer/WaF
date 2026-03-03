@@ -5,6 +5,8 @@
 
 #define SELECT_NPC ( node )( g_ComponentPtr.GetAt( node ) )
 
+constexpr const char* const NPC_CLASS("Npc");
+
 namespace _component {
 
 class Npc : public Component {
