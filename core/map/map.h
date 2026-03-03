@@ -32,6 +32,9 @@ virtual void* DestroyMap( CMap& pMap ) = 0;
 
 const virtual void HookGLWindow( HWND gl_rect ) = 0;
 
+// means no worldspawn
+virtual bool MapIsEmpty( CMap& pMap ) = 0;
+
 CMap& get() {
   return *this;
 }
