@@ -3,6 +3,10 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
+#define SELECT_ENTITY ( e )( g_ComponentPtr.GetAt( e ) )
+
+constexpr const char* const ENTITY_CLASS("Entity");
+
 namespace _component 
 {
 class Entity : public Component {
