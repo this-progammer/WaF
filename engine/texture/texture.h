@@ -3,6 +3,8 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
+#define SELECT_TEXTURE ( texture )( g_ComponentPtr.GetAt( texture ) )
+
 class Texture : public Component {
 public:
   Texture();
