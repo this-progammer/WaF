@@ -5,6 +5,7 @@
 
 #define SELECT_MESH ( mesh )( g_ComponentPtr.GetAt( mesh ) )
 
+constexpr const char* const MESH_CLASS("Mesh");
 
 typedef float MeshVec;
 typedef MeshVec MeshVec3[3];
