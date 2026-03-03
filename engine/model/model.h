@@ -3,6 +3,8 @@
 #ifndef MODEL_H
 #define MODEL_H
 
+#define SELECT_MODEL ( m )( g_ComponentPtr.GetAt( m ) )
+
 namespace _component 
 {
 
