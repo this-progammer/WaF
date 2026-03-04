@@ -13,6 +13,8 @@ public:
 virtual void* CreateIntroscreen( CIntroScreen& pIntroscreen, int& x, int& y, int& w, int& h, const char* pFile, HWND pWnd ) = 0;
 virtual void* DestroyIntroscreen( CIntroScreen& pIntroscreen ) = 0;
 
+virtual void create() = 0;
+
 CIntroScreen& get() {
   return *this;
 }
@@ -20,7 +22,6 @@ CIntroScreen& get() {
 HWND getWindow() {
   return hWindow;
 }
-
 
 protected:
 int x;
