@@ -19,12 +19,12 @@ void* _component::Entity::CreateEntity( Entity& pEntity ) {
   Vector3 pEntPos = pEntity.position;
   Component& Ptr;
   for( int i = 3; i <= pSz; i++ ){
-    Ptr.GetAt( i );
-    COMPONENT_MAKE_ENTITY( pEntity );
-    if ( pEntity != NULL && SPAWN_COMPONENT( pEntity ) ) {
-      g_vEntityPosition[i] = pEntPos[i];
-      pEntity.SelectEntity( &this );
-    }
+       Ptr.GetAt( i );
+       COMPONENT_MAKE_ENTITY( pEntity );
+       if ( pEntity != NULL && SPAWN_COMPONENT( pEntity ) ) {
+            g_vEntityPosition[i] = pEntPos[i];
+            pEntity.SelectEntity( &this );
+       }
   }
   pEntity.get();
 }
