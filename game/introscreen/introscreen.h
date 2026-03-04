@@ -10,6 +10,9 @@ public:
   CIntroScreen();
   ~CIntroScreen() = default;
 
+virtual void* CreateIntroscreen( CIntroScreen& pIntroscreen, int& x, int& y, int& w, int& h, const char* pFile, HWND pWnd ) = 0;
+virtual void* DestroyIntroscreen( CIntroScreen& pIntroscreen ) = 0;
+
 
 protected:
 int x;
