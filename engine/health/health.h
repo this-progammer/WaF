@@ -5,15 +5,16 @@
 
 constexpr const char* const HEALTH_CLASS("Health");
 
-float f_base_health = 150.0f;
-
 class CHealth {
 public:
   CHealth();
   ~CHealth() = default;
 
-  virtual void create_base() = 0;
+  virtual void* initHealth( CHealth& pHealth, bool bZero ) = 0;
+  virtual void* destroyHealth( CHealth& pHealth ) = 0;
 
+protected:
+float health = 150.0f;
 };
 
 #endif
