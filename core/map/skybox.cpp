@@ -36,3 +36,8 @@ void* _core::Skybox::CreateSkybox( Skybox& skybox, const Vector3& scalar, const 
   }
   
 }
+
+//destroy skybox
+void* _core::Skybox::DestroySkybox( Skybox& skybox ) {
+  delete *(&skybox);
+}
