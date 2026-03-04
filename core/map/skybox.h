@@ -3,7 +3,7 @@
 #ifndef SKYBOX_H
 #define SKYBOX_H
 
-#define SELECT_SKYBOX ( box )( g_PtrComponent.GetAt( box ) )
+#define SELECT_SKYBOX ( box )( g_ComponentPtr.GetAt( box ) )
 
 constexpr const char* const SKYBOX_CLASS("Map::Skybox");
 
