@@ -20,7 +20,7 @@ virtual void* MiscNpcPtr( Npc*& pNpc ) = 0;
 
 virtual void SelectNpcNode( Npc& pNpc ) = 0;
 
-static std::size_t NpcNodeSize();
+static std::size_t NpcNodeSize( Npc& pNpc );
 
 Npc& get() {
   return *this;
