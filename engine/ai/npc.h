@@ -17,10 +17,14 @@ public:
 virtual void* CreateNpcNode( Npc& pNpc, Vector3& position ) = 0;
 virtual void* DestroyNpcNode( Npc& pNpc ) = 0;
 virtual void* MiscNpcPtr( Npc*& pNpc ) = 0;
-
 virtual void SelectNpcNode( Npc& pNpc ) = 0;
 
 static std::size_t NpcNodeSize( const Npc& pNpc );
+
+virtual void ConstructHeadBox( const Npc& pNpc, const Vector3& scale ) = 0;
+virtual void ContructBodyBox( const Npc& pNpc, const Vector3& scale ) = 0;
+virtual void ConstructLegBox( const Npc& pNpc, const Vector3& scale ) = 0;
+virtual void ConstructArmBox( const Npc& pNpc, const Vector3& scale ) = 0;
 
 Npc& get() {
   return *this;
