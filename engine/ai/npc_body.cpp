@@ -10,6 +10,6 @@ void* _component::Npc::ConstructHeadBox( const Npc& pNpc, const Vector3& scale )
     }
     Vector3 pAxis = pNpc.origin;
     for( int j = 0; j < 3; j++ ) {
-        
+        SET_POSITION( pAxis[j] == scale[i][j] );
     }
 }
