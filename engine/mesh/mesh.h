@@ -29,7 +29,7 @@ class Mesh : public Component {
 
       virtual bool SelectMesh(Mesh& pMesh) = 0;
       virtual bool SelectMesh(const Mesh& pMesh) = 0;
-      virtual bool SelectMesh(Mesh** pMesh) = 0;
+      virtual bool SelectBrush(Mesh** pMesh) = 0;
 
       MeshVec3 getMins() {
         return mesh_mins;
