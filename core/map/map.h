@@ -3,7 +3,7 @@
 #ifndef MAP_H
 #define MAP_H
 
-constexpr const char* const MAP_CLASS("Map");
+constexpr const char* const MAP_CLASS("Core::Map");
 
 extern Vector3 g_MinWorldCoord = 1024.0f * -64.0f;
 extern Vector3 g_MaxWorldCoord = 1024.0f * 64.0f;
