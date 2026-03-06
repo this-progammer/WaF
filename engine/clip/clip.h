@@ -5,6 +5,8 @@
 
 // selection code is in volume class
 
+constexpr const char* const CLIP_CLASS("Component::Volume::Clip");
+
 namespace _component {
 class Clip : public Volume {
 public:
