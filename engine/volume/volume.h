@@ -20,6 +20,10 @@ virtual bool IsVisible( const Volume& volume ) = 0;
 
 virtual void SelectVolumeBox( Volume& volume ) = 0;
 
+Volume& getVolume() {
+   return *this;
+}
+
 protected:
 Vector3 volume_extents;
 const char* volume_alias;
