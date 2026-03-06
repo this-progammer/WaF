@@ -3,6 +3,8 @@
 #ifndef CAULKED_MESH_H
 #define CAULKED_MESH_H
 
+constexpr const char* const CAULKED_CLASS("Component::Mesh::CaulkedMesh");
+
 namespace _component {
 class CaulkedMesh : public Mesh {
 public:
