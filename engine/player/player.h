@@ -5,7 +5,7 @@
 
 #define SELECT_PLAYER ( i )( g_ComponentPtr.GetAt( i ) )
 
-constexpr const char* const PLAYER_CLASS("Player");
+constexpr const char* const PLAYER_CLASS("Component::Player");
 
 namespace _component {
 
