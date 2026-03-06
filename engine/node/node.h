@@ -9,7 +9,7 @@
 #define NODE_SCRIPT 0x02
 #define NODE_ANIMATION 0x03
 
-constexpr const char* const NODE_CLASS("Node");
+constexpr const char* const NODE_CLASS("Component::Node");
 
 namespace _component {
 
