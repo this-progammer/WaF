@@ -3,6 +3,8 @@
 #ifndef TRIGGER_H
 #define TRIGGER_H
 
+constexpr const char* const TRIGGER_CLASS("Component::Volume::Trigger");
+
 namespace _component {
 class Trigger : public Volume {
   Trigger( const Volume& volume );
