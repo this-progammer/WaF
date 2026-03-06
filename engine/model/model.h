@@ -5,7 +5,7 @@
 
 #define SELECT_MODEL ( m )( g_ComponentPtr.GetAt( m ) )
 
-constexpr const char* const MODEL_CLASS("Model");
+constexpr const char* const MODEL_CLASS("Component::Model");
 
 namespace _component 
 {
