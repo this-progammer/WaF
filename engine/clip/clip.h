@@ -3,6 +3,8 @@
 #ifndef CLIP_H
 #define CLIP_H
 
+// selection code is in volume class
+
 namespace _component {
 class Clip : public Volume {
 public:
