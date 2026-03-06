@@ -10,7 +10,7 @@ public:
   Select();
   ~Select() = default;
 
-constexpr const char* const SELECTION_MODULE("Selection");
+constexpr const char* const SELECTION_MODULE("Sender::Selection");
 
 // *selection*
 virtual void* CreateSelectionEvent( Select& pSelect ) = 0;
