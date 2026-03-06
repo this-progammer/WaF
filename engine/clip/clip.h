@@ -16,6 +16,11 @@ virtual void* DestroyClipBox( Clip& clip ) = 0;
 
 virtual int SetClipType( const int& type ) = 0;
 
+// get clip volume
+Clip& getClip() {
+  return *this;
+}
+
 protected:
 const char* clip_name;
 int clip_type;
