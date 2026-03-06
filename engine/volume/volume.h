@@ -3,6 +3,8 @@
 #ifndef VOLUME_H
 #define VOLUME_H
 
+#define SELECT_VOLUME ( volume )( g_ComponentPtr.GetAt( volume ) )
+
 constexpr const char* const VOLUME_CLASS("Component::Volume");
 
 namespace _component {
