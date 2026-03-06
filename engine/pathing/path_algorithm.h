@@ -18,6 +18,7 @@ Vector3 path_positioning;
 const char* path_name;
 std::size_t path_size;
 int path_node_count;
+Node& path_nodes[path_node_count];
 };
 
 #endif
