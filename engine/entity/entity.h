@@ -5,7 +5,7 @@
 
 #define SELECT_ENTITY ( e )( g_ComponentPtr.GetAt( e ) )
 
-constexpr const char* const ENTITY_CLASS("Entity");
+constexpr const char* const ENTITY_CLASS("Component::Entity");
 
 namespace _component 
 {
