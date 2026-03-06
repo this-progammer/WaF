@@ -17,6 +17,11 @@ virtual void SetTriggerScript( const char* pScript );
 
 // do selection in volume class
 
+// get the trigger box
+Trigger& getTrigger() {
+  return *this;
+}
+
 protected:
 Volume& trigger_box;
 bool is_sphere;
