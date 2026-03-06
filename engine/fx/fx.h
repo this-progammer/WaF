@@ -3,7 +3,7 @@
 #ifndef FX_H
 #define FX_H
 
-constexpr const char* const FX_CLASS("FX");
+constexpr const char* const FX_CLASS("Component::FX");
 
 namespace _component {
 class FX : public Component {
