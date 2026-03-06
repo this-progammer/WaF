@@ -3,7 +3,7 @@
 #ifndef HEALTH_H
 #define HEALTH_H
 
-constexpr const char* const HEALTH_CLASS("Health");
+constexpr const char* const HEALTH_CLASS("Component::Health");
 
 class CHealth {
 public:
