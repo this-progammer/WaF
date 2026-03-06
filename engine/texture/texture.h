@@ -3,7 +3,7 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-constexpr const char* const TEXTURE_CLASS("Texture");
+constexpr const char* const TEXTURE_CLASS("Component::Texture");
 
 #define SELECT_TEXTURE ( texture )( g_ComponentPtr.GetAt( texture ) )
 
