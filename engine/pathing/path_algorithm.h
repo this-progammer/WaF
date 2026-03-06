@@ -13,6 +13,10 @@ virtual void* DestroyPath( CPathAlgorithm& pPath ) = 0;
 
 virtual void SetPathName( const CPathAlgorithm& pPath, const char* pName ) = 0;
 
+CPathAlgorithm& getPath() {
+  return *this;
+}
+
 protected:
 Vector3 path_positioning;
 const char* path_name;
